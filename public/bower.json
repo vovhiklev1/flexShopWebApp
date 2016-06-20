@@ -1,0 +1,26 @@
+{
+  "name": "webapp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "vladimir.levchenko <vladimir.levchenko@masterdata.ru>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.6",
+    "angular-ui-router": "~0.3.1",
+    "font-awesome-bower": "~4.5.0",
+    "jquery": "~3.0.0",
+    "angular-animate": "~1.5.6"
+  }
+}

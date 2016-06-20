@@ -1,0 +1,108 @@
+
+<section id="nav-details">
+    <div class="panel-line">
+        <div class="line-wrap">
+            <div class="line" nav-details-header>
+                <!--<i class="fa fa-th" aria-hidden="true"></i>
+                <span>Меню</span>-->
+            </div>
+        </div>
+    </div>
+
+    <!--https://www.iconfinder.com/icons/-->
+    <ul class="bar-wrap">
+        <li class="bar-item" ng-repeat="item in navCtrl.navDetailsConfig.bar">
+            <div class="item" nav-bar-details="item">
+                <!--<i class="fa fa-truck" aria-hidden="true"></i>-->
+                <!--<img src="images/full_computer.png">
+                <span>Готовые комплекты</span>-->
+            </div>
+        </li>
+        <!--<li class="bar-item">
+            <div class="item">
+                &lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+                <img src="images/detales.png">
+                <span>Коплектующие</span>
+            </div>
+        </li>
+        <li class="bar-item">
+            <div class="item">
+                &lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+                <img src="images/mouse.png">
+                <span>Переферия</span>
+            </div>
+        </li>
+        <li class="bar-item">
+            <div class="item">
+                &lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+                <img src="images/service.png">
+                <span>Услуги</span>
+            </div>
+        </li>
+        <li class="bar-item">
+            <div class="item">
+                &lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+                <img src="images/systems.png">
+                <span>Компьютеры</span>
+            </div>
+        </li>
+        <li class="bar-item">
+            <div class="item">
+                &lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+                <img src="images/dispaly.png">
+                <span>Мониторы</span>
+            </div>
+        </li>-->
+    </ul>
+    <div nav-details-list>
+
+          <!-- <div ng-switch-when="2" ng-include="'core/views/navDetailsList.html2'"></div>-->
+          <!--  <div  ng-include src="'core/views/navDetailsList.html'"></div>-->
+          <!--  <div ng-switch-when="3" ng-include="'core/views/navDetailsList.html2'"></div>-->
+
+    </div>
+    <!--список готов-->
+
+    <form name="filter">
+        <ul class="filter">
+            <li>
+                <div class="filter-item">
+                    <div class="item-wrap">
+                        <div class="line">
+                            <label for="second">Б/у</label>
+                            <input type="radio" name="processors" id="second" value="second" checked>
+                        </div>
+                        <div class="line">
+                            <label for="new">Новые</label>
+                            <input type="radio" name="processors" id="new" value="new">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="filter-item">
+                    <div class="item-wrap">
+                        <div class="line">
+                            <label class="order-null label-left" for="priceFrom">Цена от:</label>
+                            <input class="price" type="text" name="priceFrom" id="priceFrom" value="0">
+                            <input class="range" type="range" name="priceFromRange" min="0" max="100000"
+                                   step="50"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="filter-item">
+                    <div class="item-wrap">
+                        <div class="line">
+                            <label class="order-null label-left" for="priceTo">Цена до:</label>
+                            <input class="price" type="text" name="priceTo" id="priceTo" value="0">
+                            <input class="range" type="range" name="priceToRange" min="10.50" max="100000"
+                                   step="50"/>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </form>
+</section>

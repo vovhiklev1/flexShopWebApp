@@ -1,0 +1,39 @@
+[
+  {
+    "name": "1",
+    "type": "complete_package",
+    "caption": "1AMD Quad Core Gaming Desktop PC Computer 4.0 G Custom Built System WIN 7 New",
+    "img": "images/pc.png",
+    "show": true,
+    "price": "7 699",
+    "action":"product",
+    "condition": "Б/у"
+  },
+  {
+    "name": "2",
+    "type": "complete_package",
+    "caption": "2AMD Quad Core Gaming Desktop PC Computer 4.0 G Custom Built System WIN 7 New",
+    "img": "images/pc.png",
+    "show": true,
+    "price": "7 699",
+    "condition": "Б/у"
+  },
+  {
+    "name": "3",
+    "type": "complete_package",
+    "caption": "3AMD Quad Core Gaming Desktop PC Computer 4.0 G Custom Built System WIN 7 New",
+    "img": "images/pc.png",
+    "show": true,
+    "price": "7 699",
+    "condition": "Б/у"
+  },
+  {
+    "name": "product",
+    "type": "complete_package",
+    "caption": "4AMD Quad Core Gaming Desktop PC Computer 4.0 G Custom Built System WIN 7 New",
+    "img": "images/pc.png",
+    "show": true,
+    "price": "7 699",
+    "condition": "Б/у"
+  }
+]

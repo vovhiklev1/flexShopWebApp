@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <!--normalize css in boostrap site-->
+    <script src="https://use.fontawesome.com/bd7a9e01b5.js"></script>
+    <!--<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:900,700,400,300,200&subset=latin,cyrillic-ext,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+</head>
+<body> <!--ui-view-->
+<!--<ul style="display: flex">
+	<li><a ui-sref="index">index /</a></li>
+	<li><a ui-sref="index.desktop">index.desktop /</a></li>
+	<li><a ui-sref="index.navdetails">index.navdetails /</a></li>
+	&lt;!&ndash;<li><a ui-sref="index.desktop">index.desktop /</a></li>&ndash;&gt;
+</ul>-->
+<!--<ul>
+	<li><a ng-href="#">desktop /</a></li>
+	<li><a ng-href="#/menu">menu /</a></li>
+	<li><a ng-href="#/menu/pc">menu/pc /</a></li>
+	<li><a ng-href="#/menu/components">menu/components /</a></li>
+	<li><a ng-href="#/master">master /</a></li>
+	<li><a ng-href="#/about">about /</a></li>
+</ul>-->
+
+<section class="container" ui-view="view"></section>
+<!--<div ui-view="view"></div>-->
+<!--<div ui-view></div>-->
+
+
+<!--<section class="container">-->
+
+<!--<nav id="nav" class="">
+	<ul>
+		<li>
+			<div class="panel">
+				<i class="fa fa-th" aria-hidden="true"></i>
+				<span>Меню</span>
+			</div>
+		</li>
+		<li>
+			<div class="panel">
+				<i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+				<span>Мастер подбора компьютера</span>
+			</div>
+		</li>
+		<li>
+			<div class="panel">
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				<span>Корзина</span>
+			</div>
+		</li>
+		<li>
+			<div class="panel">
+				<i class="fa fa-truck" aria-hidden="true"></i>
+				<span>Доставка</span>
+			</div>
+		</li>
+		<li>
+			<div class="panel">
+				<i class="fa fa-users" aria-hidden="true"></i>
+				<span>О нас</span>
+			</div>
+		</li>
+	</ul>
+	<section id="nav-details">
+		<div class="panel-line">
+			<div class="line-wrap">
+				<div class="line">
+					<i class="fa fa-th" aria-hidden="true"></i>
+					<span>Меню</span>
+				</div>
+			</div>
+		</div>
+
+		&lt;!&ndash;https://www.iconfinder.com/icons/&ndash;&gt;
+		<ul class="bar-wrap">
+			<li class="bar-item">
+				<div class="item">
+					&lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+					<img src="images/full_computer.png">
+					<span>Готовые комплекты</span>
+				</div>
+			</li>
+			<li class="bar-item">
+				<div class="item">
+					&lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+					<img src="images/detales.png">
+					<span>Коплектующие</span>
+				</div>
+			</li>
+			<li class="bar-item">
+				<div class="item">
+					&lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+					<img src="images/mouse.png">
+					<span>Переферия</span>
+				</div>
+			</li>
+			<li class="bar-item">
+				<div class="item">
+					&lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+					<img src="images/service.png">
+					<span>Услуги</span>
+				</div>
+			</li>
+			<li class="bar-item">
+				<div class="item">
+					&lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+					<img src="images/systems.png">
+					<span>Компьютеры</span>
+				</div>
+			</li>
+			<li class="bar-item">
+				<div class="item">
+					&lt;!&ndash;<i class="fa fa-truck" aria-hidden="true"></i>&ndash;&gt;
+					<img src="images/dispaly.png">
+					<span>Мониторы</span>
+				</div>
+			</li>
+		</ul>
+
+		&lt;!&ndash;список готов&ndash;&gt;
+		<ul class="detail-list">
+			<li>
+				<div class="detail-item">
+					<div class="item-wrap">
+						<div class="line">
+							<span>Процессоры</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="detail-item">
+					<div class="item-wrap">
+						<div class="line">
+							<span>Материнские платы</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="detail-item">
+					<div class="item-wrap">
+						<div class="line">
+							<span>Корпуса</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="detail-item">
+					<div class="item-wrap">
+						<div class="line">
+							<span>Видеокарты</span>
+						</div>
+					</div>
+				</div>
+			</li>
+
+		</ul>
+		<form name="filter">
+			<ul class="filter">
+				<li>
+					<div class="filter-item">
+						<div class="item-wrap">
+							<div class="line">
+								<label for="second">Б/у</label>
+								<input type="radio" name="processors" id="second" value="second" checked>
+							</div>
+							<div class="line">
+								<label for="new">Новые</label>
+								<input type="radio" name="processors" id="new" value="new">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="filter-item">
+						<div class="item-wrap">
+							<div class="line">
+								<label class="order-null label-left" for="priceFrom">Цена от:</label>
+								<input class="price" type="text" name="priceFrom" id="priceFrom" value="0">
+								<input class="range" type="range" name="priceFromRange" min="0" max="100000"
+									   step="50"/>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="filter-item">
+						<div class="item-wrap">
+							<div class="line">
+								<label class="order-null label-left" for="priceTo">Цена до:</label>
+								<input class="price" type="text" name="priceTo" id="priceTo" value="0">
+								<input class="range" type="range" name="priceToRange" min="10.50" max="100000"
+									   step="50"/>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</form>
+	</section>
+</nav>-->
+
+<!--<main id="main">
+	<section class="header">
+		<header>
+			<h1>Комплектующие</h1>
+		</header>
+		&lt;!&ndash;<div class="categories-wrap">
+			<ul class="categories">
+				<li class="item"><span>Відеокарти</span></li>
+				<li class="item"><span>Жорсткі диски</span></li>
+				<li class="item"><span>Кишені для HDD</span></li>
+				<li class="item"><span>Диски SSD</span></li>
+				<li class="item"><span>Процесори</span></li>
+				<li class="item"><span>Материнські плати</span></li>
+				<li class="item"><span>Оперативна пам'ять</span></li>
+				<li class="item"><span>Мережеві накопичувачі (NAS)</span></li>
+				<li class="item"><span>Дисководи DVD, CD, Blu-ray</span></li>
+			</ul>
+		</div>&ndash;&gt;
+	</section>
+
+	<section class="goods">
+		<ul>
+			<li class="good-item">
+				<figure>
+					&lt;!&ndash;<div class="img">
+
+					</div>&ndash;&gt;
+					<div class="img-wrap">
+						<img src="images/pc.png">
+					</div>
+					<figcaption>AMD Quad Core Gaming Desktop PC Computer 4.0 G Custom Built System WIN 7 New
+					</figcaption>
+				</figure>
+				<div class="good-footer">
+					<div class="left-side">
+						<div class="price-wrap">
+							<span class="number">7 699 </span><span class="currency">грн</span>
+						</div>
+						<div class="state-wrap">
+							<span>Б/у</span>
+						</div>
+						<div class="topseller-wrap">
+							&lt;!&ndash;	Лучший выбор!
+								<img src="img/medal.png">&ndash;&gt;
+						</div>
+					</div>
+					<div class="right-side">
+						<div class="buy-wrap">
+							<div class="buy">
+								Buy
+							</div>
+							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</li>
+			<li class="good-item">
+				<figure>
+					&lt;!&ndash;<div class="img">
+
+					</div>&ndash;&gt;
+					<div class="img-wrap">
+						<img src="images/pc.png">
+					</div>
+					<figcaption>AMD Quad Core Gaming Desktop PC Computer 4.0 G Custom Built System WIN 7 New
+					</figcaption>
+				</figure>
+				<div class="good-footer">
+					<div class="left-side">
+						<div class="price-wrap">
+							<span class="number">7 699 </span><span class="currency">грн</span>
+						</div>
+						<div class="state-wrap">
+							<span>Б/у</span>
+						</div>
+						<div class="topseller-wrap">
+							&lt;!&ndash;	Лучший выбор!
+								<img src="img/medal.png">&ndash;&gt;
+						</div>
+					</div>
+					<div class="right-side">
+						<div class="buy-wrap">
+							<div class="buy">
+								Buy
+							</div>
+							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</li>
+			<li class="good-item">
+				<figure>
+					&lt;!&ndash;<div class="img">
+
+					</div>&ndash;&gt;
+					<div class="img-wrap">
+						<img src="images/pc.png">
+					</div>
+					<figcaption>AMD Quad Core Gaming Desktop PC Computer 4.0 G Custom Built System WIN 7 New
+					</figcaption>
+				</figure>
+				<div class="good-footer">
+					<div class="left-side">
+						<div class="price-wrap">
+							<span class="number">7 699 </span><span class="currency">грн</span>
+						</div>
+						<div class="state-wrap">
+							<span>Б/у</span>
+						</div>
+						<div class="topseller-wrap">
+							&lt;!&ndash;	Лучший выбор!
+								<img src="img/medal.png">&ndash;&gt;
+						</div>
+					</div>
+					<div class="right-side">
+						<div class="buy-wrap">
+							<div class="buy">
+								Buy
+							</div>
+							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</li>
+			<li class="good-item">
+				<figure>
+					&lt;!&ndash;<div class="img">
+
+					</div>&ndash;&gt;
+					<div class="img-wrap">
+						<img src="images/pc.png">
+					</div>
+					<figcaption>AMD Quad Core Gaming Desktop PC Computer 4.0 G Custom Built System WIN 7 New
+					</figcaption>
+				</figure>
+				<div class="good-footer">
+					<div class="left-side">
+						<div class="price-wrap">
+							<span class="number">7 699 </span><span class="currency">грн</span>
+						</div>
+						<div class="state-wrap">
+							<span>Б/у</span>
+						</div>
+						<div class="topseller-wrap">
+							&lt;!&ndash;	Лучший выбор!
+								<img src="img/medal.png">&ndash;&gt;
+						</div>
+					</div>
+					<div class="right-side">
+						<div class="buy-wrap">
+							<div class="buy">
+								Buy
+							</div>
+							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</li>
+			<li class="good-item">
+				<figure>
+					&lt;!&ndash;<div class="img">
+
+					</div>&ndash;&gt;
+					<div class="img-wrap">
+						<img src="images/pc.png">
+					</div>
+					<figcaption>AMD Quad Core Gaming Desktop PC Computer 4.0 G Custom Built System WIN 7 New
+					</figcaption>
+				</figure>
+				<div class="good-footer">
+					<div class="left-side">
+						<div class="price-wrap">
+							<span class="number">7 699 </span><span class="currency">грн</span>
+						</div>
+						<div class="state-wrap">
+							<span>Б/у</span>
+						</div>
+						<div class="topseller-wrap">
+							&lt;!&ndash;	Лучший выбор!
+								<img src="img/medal.png">&ndash;&gt;
+						</div>
+					</div>
+					<div class="right-side">
+						<div class="buy-wrap">
+							<div class="buy">
+								Buy
+							</div>
+							<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</li>
+
+		</ul>
+
+	</section>
+</main>-->
+<!--</section>-->
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+
+
+<script src="webapp.js"></script>
+<script src="core/config/states.js"></script>
+<script src="core/config/run.js"></script>
+<script src="core/config/decorators.js"></script>
+<script src="core/services/httpService.js"></script>
+<script src="core/services/productService.js"></script>
+
+<script src="core/controllers/navController.js"></script>
+<script src="core/controllers/navDetailsController.js"></script>
+<script src="core/controllers/navDetailsListController.js"></script>
+<script src="core/controllers/desktopController.js"></script>
+<script src="core/controllers/productController.js"></script>
+
+
+<script src="core/directives/navDetailsDirective.js"></script>
+<script src="core/directives/navBarDetailsDirective.js"></script>
+<script src="core/directives/navLinkDetailsDirective.js"></script>
+<script src="core/directives/navItemDirective.js"></script>
+<script src="core/directives/navDetailsListDirective.js"></script>
+<script src="core/directives/prodItemDirective.js"></script>
+
+
+<!--<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.js"></script>-->
+
+
+</body>
+</html>

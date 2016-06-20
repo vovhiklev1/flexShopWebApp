@@ -1,0 +1,49 @@
+<!--<ul>&lt;!&ndash;<a ui-sref="common.subs({name: item.name})">{{item.name+'/'+item.tool}}</a>&ndash;&gt;
+	<li ng-repeat=" item in navCtrl.navConfig">
+		<div ui-tool="item"></div>
+	</li>
+</ul>-->
+
+<nav id="nav" class="">
+    <ul>
+        <li ng-repeat=" item in navCtrl.config">
+            <div class="panel" nav-item="item"></div>
+        </li>
+        <!--<li>
+            <div class="panel">
+                <i class="fa fa-th" aria-hidden="true"></i>
+                <span>Меню</span>
+            </div>
+        </li>
+        <li>
+            <div class="panel">
+                <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+                <span>Мастер подбора компьютера</span>
+            </div>
+        </li>
+        <li>
+            <div class="panel">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span>Корзина</span>
+            </div>
+        </li>
+        <li>
+            <div class="panel">
+                <i class="fa fa-truck" aria-hidden="true"></i>
+                <span>Доставка</span>
+            </div>
+        </li>
+        <li>
+            <div class="panel">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <span>О нас</span>
+            </div>
+        </li>-->
+    </ul>
+</nav>
+
+<div ui-view="navdetails" nav-details ng-if="navDetailsAvailable"></div>
+<div ui-view="desktop" id="main"></div>
+
+
+

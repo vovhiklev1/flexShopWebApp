@@ -1,0 +1,33 @@
+//prod
+
+<main>
+    <section class="header">
+        <header>
+            <h1>Комплектующие</h1>
+        </header>
+        <!--<div class="categories-wrap">
+            <ul class="categories">
+                <li class="item"><span>Відеокарти</span></li>
+                <li class="item"><span>Жорсткі диски</span></li>
+                <li class="item"><span>Кишені для HDD</span></li>
+                <li class="item"><span>Диски SSD</span></li>
+                <li class="item"><span>Процесори</span></li>
+                <li class="item"><span>Материнські плати</span></li>
+                <li class="item"><span>Оперативна пам'ять</span></li>
+                <li class="item"><span>Мережеві накопичувачі (NAS)</span></li>
+                <li class="item"><span>Дисководи DVD, CD, Blu-ray</span></li>
+            </ul>
+        </div>-->
+    </section>
+
+    <section class="goods">
+
+
+        <ul>
+            <li ng-repeat="item in productCtrl.productData">
+                <div>{{item}}</div>
+            </li>
+        </ul>
+
+    </section>
+</main>

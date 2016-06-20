@@ -1,0 +1,188 @@
+[
+  {
+    "name": "menu",
+    "caption": "Меню",
+    "action": "menu",
+    "icon": "fa fa-th",
+    "show": true,
+    "nav_details": [
+      {
+        "detail_header": {
+          "name": "nav_detail_header",
+          "caption": "Меню",
+          "icon": "fa fa-th",
+          "show": true,
+          "type": "nav_detail_header"
+        }
+      },
+      {
+        "bar": [
+          {
+            "name": "complete_package",
+            "caption": "Готовые комплекты",
+            "action": "complete_package",
+            "img": "images/full_computer.png",
+            "show": true,
+            "type": "nav_detail_tool",
+            "actionType": "state"
+          },
+          {
+            "name": "components",
+            "caption": "Коплектующие",
+            "action": "components",
+            "img": "images/detales.png",
+            "show": true,
+            "type": "nav_detail_tool",
+            "actionType": "state"
+          },
+          {
+            "name": "periphery",
+            "caption": "Переферия",
+            "action": "periphery",
+            "img": "images/mouse.png",
+            "show": true,
+            "type": "nav_detail_tool"
+          },
+          {
+            "name": "services",
+            "caption": "Услуги",
+            "action": "services",
+            "img": "images/service.png",
+            "show": true,
+            "type": "nav_detail_tool"
+          },
+          {
+            "name": "computers",
+            "caption": "Компьютеры",
+            "action": "computers",
+            "img": "images/systems.png",
+            "show": true,
+            "type": "nav_detail_tool"
+          },
+          {
+            "name": "dispalys",
+            "caption": "Мониторы",
+            "action": "dispalys",
+            "img": "images/dispaly.png",
+            "show": true,
+            "type": "nav_detail_tool"
+          }
+        ]
+      },
+      {
+        "link": [
+          {
+            "name": "1",
+            "caption": "Процессоры",
+            "action": "cpu",
+            "show": true,
+            "parent": "complete_package"
+          },
+          {
+            "name": "2",
+            "caption": "Материнские платы",
+            "action": "mather_board",
+            "show": true,
+            "parent": "components"
+          },
+          {
+            "name": "3",
+            "caption": "Корпуса",
+            "action": "box",
+            "show": true,
+            "parent": "components"
+          },
+          {
+            "name": "4",
+            "caption": "Видеокарты",
+            "action": "video_card",
+            "show": true,
+            "parent": "components"
+          },
+          {
+            "name": "5",
+            "caption": "HDD",
+            "action": "hdd",
+            "show": true,
+            "parent": "complete_package"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "master",
+    "caption": "Мастер подбора",
+    "icon": "fa fa-american-sign-language-interpreting",
+    "action": "master",
+    "show": true,
+    "nav_details": [
+      {
+        "detail_header": {
+          "name": "nav_detail_header",
+          "caption": "Мастер подбора",
+          "icon": "fa fa-american-sign-language-interpreting",
+          "show": true,
+          "type": "nav_detail_header"
+        }
+      },
+      {
+        "bar": [
+          {
+            "name": "complete_package",
+            "caption": "Готовые комплекты",
+            "action": "complete_package",
+            "img": "images/full_computer.png",
+            "show": true,
+            "type": "nav_detail_tool"
+          },
+          {
+            "name": "components",
+            "caption": "Коплектующие",
+            "action": "components",
+            "img": "images/detales.png",
+            "show": true,
+            "type": "nav_detail_tool"
+          }
+        ]
+      },
+      {
+        "link": [
+          {
+            "name": "complete_package",
+            "caption": "Процессоры",
+            "action": "complete_package",
+            "show": true
+          },
+          {
+            "name": "complete_package",
+            "caption": "Материнские платы",
+            "action": "complete_package",
+            "show": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "cart",
+    "caption": "Корзина",
+    "icon": "fa fa-shopping-cart",
+    "action": "cart",
+    "show": true
+  },
+  {
+    "name": "truck",
+    "caption": "Доставка",
+    "icon": "fa fa-truck",
+    "action": "truck",
+    "show": true
+  },
+  {
+    "name": "about",
+    "caption": "О нас",
+    "icon": "fa fa-shopping-cart",
+    "action": "about",
+    "show": true
+  }
+]
